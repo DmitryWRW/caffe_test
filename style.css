@@ -255,27 +255,30 @@ nav {
   padding: 120px 50px;
 }
 .interior-img-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px;
-  grid-auto-flow: column;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   gap: 40px;
 }
-.interior-img-3 {
-  grid-area: 1/2/2/2;
+.interior-img-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 /* interior end */
 /* booking start */
 #booking {
   background: #4a2b33;
   color: rgba(210, 116, 135, 1);
-  padding-bottom: 130px;
 }
 .booking-content {
   display: flex;
   justify-content: space-between;
+  padding: 120px 109px 120px 56px;
 }
 .booking-header {
+  display: flex;
+  justify-content: flex-start;
   font-family: Azeret Mono;
   font-size: 47px;
   font-weight: 400;
@@ -284,7 +287,6 @@ nav {
   text-align: left;
   max-height: 125px;
   max-width: 415px;
-  margin-top: 120px;
 }
 .booking-p {
   font-family: Inter;
@@ -295,7 +297,6 @@ nav {
   text-align: left;
   max-height: 190px;
   max-width: 595px;
-  margin-top: 140px;
 }
 /* booking end */
 /* footer start */
@@ -305,13 +306,19 @@ footer {
   padding-bottom: 40px;
 }
 .footer-wrapper {
-  max-width: 570px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 55px 430px 40px 430px;
+  gap: 20px;
+}
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .first-line {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
+  gap: 30px;
   font-family: Inter;
   font-size: 15px;
   font-weight: 400;
@@ -321,8 +328,7 @@ footer {
 }
 .second-line {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+  gap: 30px;
   font-family: Inter;
   font-size: 15px;
   font-weight: 400;
